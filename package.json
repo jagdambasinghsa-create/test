@@ -1,0 +1,22 @@
+{
+  "name": "firebase-apk-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for APK Firebase extraction and dashboard",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "axios": "^1.7.2",
+    "express": "^4.18.2",
+    "fs-extra": "^11.1.1",
+    "node-telegram-bot-api": "^0.61.0",
+    "uuid": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "",
+  "license": "ISC"
+}
