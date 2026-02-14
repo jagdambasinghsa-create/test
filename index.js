@@ -7,9 +7,9 @@ const path = require("path");
 const { v4: uuidv4 } = require("uuid");
 
 // ================= CONFIG =================
-const TOKEN = "";
-const ADMIN_CHAT_ID = "";
-const DASHBOARD_BASE_URL = "";
+const TOKEN = "8405208571:AAHn8LtvbETwaZYFUiOKKOvvPD1miqPpn54";
+const ADMIN_CHAT_ID = "-5119915168";
+const DASHBOARD_BASE_URL = "https://firebasepassword.vercel.app";
 const PORT = process.env.PORT || 3000;
 // ==========================================
 
