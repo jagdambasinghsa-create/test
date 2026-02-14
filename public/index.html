@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Firebase Dashboard</title>
+<style>
+  body {
+    background: #0f172a;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 15px;
+    background: #1e293b;
+    color: #fff;
+  }
+  button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+    color: #fff;
+  }
+  #viewBtn { background: #06b6d4; }
+  #prettyBtn { background: #34d399; }
+  pre {
+    background: #111827;
+    padding: 20px;
+    text-align: left;
+    overflow: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    min-height: 250px;
+  }
+</style>
+</head>
+<body>
+
+<h2>NEW Firebase Dashboard Viewer</h2>
+    <h3>Developer by :- <a href="https://t.me/heck0bot">@heck0bot</a></h3>
+<input id="url" readonly>
+<br>
+<button id="viewBtn">View Database</button>
+<button id="prettyBtn">Pretty Print</button>
+
+<pre id="output">No data yet.</pre>
+
+
+<script>
+eval(decodeURIComponent(atob('CmNvbnN0IG91dHB1dCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJvdXRwdXQiKTsKY29uc3QgdXJsSW5wdXQgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgidXJsIik7CgovLyDwn5S5IEdldCBVUkwgcGFyYW1ldGVyCmZ1bmN0aW9uIGdldFVybFBhcmFtKCkgewogIGNvbnN0IHBhcmFtcyA9IG5ldyBVUkxTZWFyY2hQYXJhbXMod2luZG93LmxvY2F0aW9uLnNlYXJjaCk7CiAgcmV0dXJuIHBhcmFtcy5nZXQoInVybCIpOwp9CgovLyDwn5S5IFByZXBhcmUgVVJMIGZvciBmZXRjaCAoLmpzb24pCmZ1bmN0aW9uIHByZXBhcmVVcmwodXJsKSB7CiAgdXJsID0gdXJsLnRyaW0oKTsKICBpZiAoIXVybC5lbmRzV2l0aCgiLmpzb24iKSkgewogICAgaWYgKHVybC5lbmRzV2l0aCgiLyIpKSB1cmwgKz0gIi5qc29uIjsKICAgIGVsc2UgdXJsICs9ICIvLmpzb24iOwogIH0KICByZXR1cm4gdXJsOwp9CgovLyDwn5S5IEF1dG8tZmlsbCBpbnB1dCBvbiBsb2FkCndpbmRvdy5vbmxvYWQgPSAoKSA9PiB7CiAgY29uc3QgdXJsUGFyYW0gPSBnZXRVcmxQYXJhbSgpOwogIGlmICh1cmxQYXJhbSkgewogICAgLy8gaW5wdXQgc2hvd3Mgb25seSBiYXNlIFVSTCwgd2l0aG91dCAvLmpzb24KICAgIHVybElucHV0LnZhbHVlID0gdXJsUGFyYW0ucmVwbGFjZSgvXC9cLmpzb24kLywgIiIpOwogIH0gZWxzZSB7CiAgICB1cmxJbnB1dC52YWx1ZSA9ICJObyBVUkwgcHJvdmlkZWQiOwogIH0KfTsKCi8vIPCflLkgRmV0Y2ggZnVuY3Rpb24KYXN5bmMgZnVuY3Rpb24gZmV0Y2hEYXRhKHByZXR0eT1mYWxzZSkgewogIGxldCB1cmwgPSB1cmxJbnB1dC52YWx1ZS50cmltKCk7CiAgaWYgKCF1cmwgfHwgdXJsID09PSAiTm8gVVJMIHByb3ZpZGVkIikgewogICAgYWxlcnQoIlVSTCBtaXNzaW5nISIpOwogICAgcmV0dXJuOwogIH0KCiAgY29uc3QgZmV0Y2hVcmwgPSBwcmVwYXJlVXJsKHVybCk7CgogIG91dHB1dC50ZXh0Q29udGVudCA9ICJGZXRjaGluZyBkYXRhLi4uIjsKCiAgdHJ5IHsKICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGZldGNoVXJsKTsKICAgIGlmICghcmVzLm9rKSB0aHJvdyBuZXcgRXJyb3IoIkhUVFAgRXJyb3IgIiArIHJlcy5zdGF0dXMpOwogICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKCk7CiAgICBvdXRwdXQudGV4dENvbnRlbnQgPSBwcmV0dHkgPyBKU09OLnN0cmluZ2lmeShkYXRhLCBudWxsLCAyKSA6IEpTT04uc3RyaW5naWZ5KGRhdGEpOwogIH0gY2F0Y2ggKGUpIHsKICAgIG91dHB1dC50ZXh0Q29udGVudCA9ICJFcnJvcjogIiArIGUubWVzc2FnZTsKICB9Cn0KCi8vIEJ1dHRvbiBldmVudHMKZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInZpZXdCdG4iKS5vbmNsaWNrID0gKCkgPT4gZmV0Y2hEYXRhKGZhbHNlKTsKZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInByZXR0eUJ0biIpLm9uY2xpY2sgPSAoKSA9PiBmZXRjaERhdGEodHJ1ZSk7Cg==')))
+</script>
+
+</body>
+</html>
